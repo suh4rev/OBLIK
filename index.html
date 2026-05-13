@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ОБЛИК — интерьерное бюро полного цикла</title>
+    <meta
+      name="description"
+      content="ОБЛИК — интерьерное бюро полного цикла. Дизайн-проект, комплектация, реализация и контроль интерьера под ключ."
+    />
+    <link rel="preload" as="image" href="assets/hero-interior-right-accent.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="ОБЛИК">
+        <img class="brand__logo" src="assets/oblik-logo-word-gold.png" alt="ОБЛИК" width="1536" height="301" />
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#approach">О компании</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Этапы</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#contact">Контакты</a>
+        <a class="nav-cta" href="#contact">Обсудить проект</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-dark">
+        <div class="hero__media" aria-hidden="true"></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="hero__content page-shell">
+          <p class="eyebrow">Дизайн · комплектация · реализация</p>
+          <h1>Интерьерное бюро<br />полного цикла</h1>
+          <p class="hero__lead">
+            Проектируем, комплектуем и доводим интерьер до готовности. Один маршрут:
+            дизайн, закупки, ремонт и контроль результата.
+          </p>
+          <div class="hero__actions" aria-label="Основные действия">
+            <a class="button button--light" href="#contact">Обсудить проект</a>
+            <a class="button button--ghost" href="#cases">Смотреть кейсы</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="approach" id="approach">
+        <div class="page-shell section-head">
+          <p class="section-kicker">О компании</p>
+          <h2>Спокойная реализация вместо хаоса стройки</h2>
+        </div>
+
+        <div class="page-shell approach__grid">
+          <article class="approach__item">
+            <span class="approach__number">01</span>
+            <h3>Проектируем с учётом реализации</h3>
+            <p>
+              Планировочные решения, визуальная концепция, материалы и инженерные задачи связываются
+              заранее, чтобы интерьер можно было воплотить без импровизации на объекте.
+            </p>
+          </article>
+          <article class="approach__item approach__item--accent">
+            <span class="approach__number">02</span>
+            <h3>Управляем процессом</h3>
+            <p>
+              Координируем подрядчиков, поставки, сроки и решения. На каждом этапе понятно, что уже
+              сделано, что происходит сейчас и какие решения нужны дальше.
+            </p>
+          </article>
+          <article class="approach__item">
+            <span class="approach__number">03</span>
+            <h3>Отвечаем за итоговую картину</h3>
+            <p>
+              Контроль нужен не ради отчётности, а ради цельного результата: эстетика, бюджет,
+              качество работ и комплектация остаются в единой логике.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="page-shell section-head section-head--split">
+          <div>
+            <p class="section-kicker">Услуги</p>
+            <h2>Полный цикл в одном месте</h2>
+          </div>
+          <p>
+            Можно подключить бюро на отдельный этап или передать весь маршрут: от концепции до
+            готового пространства.
+          </p>
+        </div>
+
+        <div class="page-shell services__grid">
+          <article class="service-card">
+            <div class="service-card__top">
+              <span>Дизайн</span>
+              <strong>01</strong>
+            </div>
+            <h3>Дизайн-проект</h3>
+            <p>
+              Концепция, планировочные решения, визуализации, рабочие чертежи, спецификации и
+              ведомости для реализации.
+            </p>
+          </article>
+          <article class="service-card service-card--dark">
+            <div class="service-card__top">
+              <span>Снабжение</span>
+              <strong>02</strong>
+            </div>
+            <h3>Комплектация</h3>
+            <p>
+              Подбор, согласование, заказ и контроль поставок материалов, мебели, света и предметов
+              интерьера с учётом бюджета.
+            </p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__top">
+              <span>Объект</span>
+              <strong>03</strong>
+            </div>
+            <h3>Ремонт и реализация</h3>
+            <p>
+              Организация работ, контроль качества, решение технических вопросов и доведение проекта
+              до состояния готового интерьера.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process section-dark" id="process">
+        <div class="page-shell section-head section-head--split">
+          <div>
+            <p class="section-kicker">Как проходит работа</p>
+            <h2>Понятная последовательность без лишнего шума</h2>
+          </div>
+          <p>
+            Каждый этап фиксируется по задачам, решениям и ответственности. Это помогает держать
+            проект в рамке, а не возвращаться к одним и тем же вопросам.
+          </p>
+        </div>
+
+        <div class="page-shell process__list">
+          <article class="process-step">
+            <span>01</span>
+            <h3>Бриф и аудит задач</h3>
+            <p>Формируем цели, ограничения, сценарии жизни и базовую рамку бюджета.</p>
+          </article>
+          <article class="process-step">
+            <span>02</span>
+            <h3>Концепция</h3>
+            <p>Собираем образ будущего интерьера, планировки и ключевые материалы.</p>
+          </article>
+          <article class="process-step">
+            <span>03</span>
+            <h3>Проектная документация</h3>
+            <p>Готовим чертежи, ведомости, спецификации и решения для строителей.</p>
+          </article>
+          <article class="process-step">
+            <span>04</span>
+            <h3>Комплектация</h3>
+            <p>Подбираем позиции, сверяем сроки, цены, поставщиков и замены.</p>
+          </article>
+          <article class="process-step">
+            <span>05</span>
+            <h3>Реализация</h3>
+            <p>Координируем работы, авторский надзор и технические решения на объекте.</p>
+          </article>
+          <article class="process-step">
+            <span>06</span>
+            <h3>Передача результата</h3>
+            <p>Финальная проверка, комплектация деталей и готовый интерьер для жизни.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cases" id="cases">
+        <div class="page-shell section-head section-head--split">
+          <div>
+            <p class="section-kicker">Кейсы / объекты</p>
+            <h2>Интерьеры, собранные<br />в единую систему</h2>
+          </div>
+          <p>
+            В портфолио важны не только красивые кадры, но и путь: задача клиента, бюджетная логика,
+            комплектация и качество реализации.
+          </p>
+        </div>
+
+        <div class="page-shell cases__grid">
+          <article class="case-card case-card--large">
+            <img src="assets/case-apartment.jpg" alt="Современная гостиная в спокойной светлой гамме" />
+            <div class="case-card__body">
+              <p>Квартира, 86 м²</p>
+              <h3>Сдержанный интерьер для семьи</h3>
+              <span>Дизайн-проект · комплектация · реализация</span>
+            </div>
+          </article>
+          <article class="case-card">
+            <img src="assets/case-house.jpg" alt="Светлая зона гостиной и кухни в современном доме" />
+            <div class="case-card__body">
+              <p>Дом, 145 м²</p>
+              <h3>Тёплая архитектурная база</h3>
+              <span>Проект · мебель · свет</span>
+            </div>
+          </article>
+          <article class="case-card">
+            <img src="assets/case-detail.jpg" alt="Минималистичная гостиная с мягкой мебелью" />
+            <div class="case-card__body">
+              <p>Апартаменты, 64 м²</p>
+              <h3>Компактное пространство<br />без визуального шума</h3>
+              <span>Планировка · материалы · надзор</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="comfort">
+        <div class="page-shell comfort__grid">
+          <div class="comfort__text">
+            <p class="section-kicker">Почему с нами удобно</p>
+            <h2>Клиент видит<br />не стройку,<br />а управляемый<br />проект</h2>
+          </div>
+          <div class="comfort__list">
+            <article>
+              <h3>Один центр ответственности</h3>
+              <p>Не нужно синхронизировать дизайнера, строителей, поставщиков и подрядчиков отдельно.</p>
+            </article>
+            <article>
+              <h3>Контроль бюджета</h3>
+              <p>Подбор решений идёт в рамках согласованной финансовой логики, а не после факта.</p>
+            </article>
+            <article>
+              <h3>Системная коммуникация</h3>
+              <p>Решения, сроки и статусы проекта собираются в понятную картину без лишнего давления.</p>
+            </article>
+            <article>
+              <h3>Эстетика без перегруза</h3>
+              <p>Интерьер остаётся современным, спокойным и пригодным для реальной жизни.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-dark" id="contact">
+        <div class="page-shell contact__simple">
+          <p class="contact__eyebrow">Связь</p>
+          <h2>Обсудим будущий интерьер</h2>
+          <p class="contact__lead">
+            Напишите, что нужно сделать: квартира, дом или коммерческое пространство.
+            Мы быстро оценим задачу и подскажем понятный следующий шаг.
+          </p>
+          <div class="contact__tags" aria-label="Что указать в сообщении">
+            <span>объект</span>
+            <span>площадь</span>
+            <span>формат работы</span>
+          </div>
+          <a class="button button--light contact__button" href="https://t.me/oleg_krut" target="_blank" rel="noreferrer">
+            Написать нам
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-shell footer__grid">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="#top" aria-label="ОБЛИК">
+            <img class="brand__logo" src="assets/oblik-logo-word-gold.png" alt="ОБЛИК" width="1536" height="301" />
+          </a>
+          <p>
+            Интерьерное бюро полного цикла: проект, комплектация, реализация и контроль результата.
+          </p>
+        </div>
+
+        <div class="footer__column">
+          <h2>Контакты</h2>
+          <a class="footer__link" href="tel:+79990000000">
+            <span class="footer__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z" />
+              </svg>
+            </span>
+            +7 (999) 000-00-00
+          </a>
+          <a class="footer__link" href="mailto:hello@oblik-buro.ru">
+            <span class="footer__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
+                <path d="m22 7-10 6L2 7" />
+              </svg>
+            </span>
+            hello@oblik-buro.ru
+          </a>
+        </div>
+
+        <div class="footer__column">
+          <h2>Мессенджеры</h2>
+          <a class="footer__link" href="https://t.me/oleg_krut" target="_blank" rel="noreferrer">
+            <span class="footer__messenger footer__messenger--telegram" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M21.8 4.6 18.5 20c-.2 1-.8 1.2-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L7 14 2.4 12.5c-1-.3-1-1 0-1.4L20.3 4c.8-.3 1.6.2 1.5.6Z" />
+              </svg>
+            </span>
+            Telegram
+          </a>
+          <a class="footer__link" href="#" aria-label="MAX">
+            <span class="footer__messenger footer__messenger--max" aria-hidden="true">MAX</span>
+            MAX
+          </a>
+        </div>
+
+        <nav class="footer__column" aria-label="Навигация в подвале">
+          <h2>Навигация</h2>
+          <a href="#approach">О компании</a>
+          <a href="#services">Услуги</a>
+          <a href="#process">Этапы</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+      </div>
+
+      <div class="page-shell footer__bottom">
+        <span>© 2026 ОБЛИК. Все права защищены.</span>
+        <span>Интерьерное бюро полного цикла</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
