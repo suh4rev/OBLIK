@@ -8,13 +8,13 @@
       name="description"
       content="ОБЛИК — интерьерное бюро полного цикла. Дизайн-проект, комплектация, реализация и контроль интерьера под ключ."
     />
-    <link rel="preload" as="image" href="assets/hero-interior-right-accent.jpg" />
+    <link rel="preload" as="image" href="assets/hero-interior-right-accent.webp" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="ОБЛИК">
-        <img class="brand__logo" src="assets/oblik-logo-word-gold.png" alt="ОБЛИК" width="1536" height="301" />
+        <img class="brand__logo" src="assets/oblik-logo-word-gold.webp" alt="ОБЛИК" width="1536" height="301" />
       </a>
 
       <button
@@ -33,7 +33,7 @@
         <a href="#approach">О компании</a>
         <a href="#services">Услуги</a>
         <a href="#process">Этапы</a>
-        <a href="#cases">Кейсы</a>
+        <a href="#cases">Работы</a>
         <a href="#contact">Контакты</a>
         <a class="nav-cta" href="#contact">Связаться с нами</a>
       </nav>
@@ -53,7 +53,7 @@
           </p>
           <div class="hero__actions" aria-label="Основные действия">
             <a class="button button--light" href="#contact">Обсудить проект</a>
-            <a class="button button--ghost" href="#cases">Смотреть кейсы</a>
+            <a class="button button--ghost" href="#cases">Смотреть работы</a>
           </div>
         </div>
       </section>
@@ -68,7 +68,7 @@
           <article class="approach__item">
             <span class="approach__number">01</span>
             <div class="approach__visual" aria-hidden="true">
-              <img src="assets/approach-implementation.png" alt="" loading="lazy">
+              <img src="assets/approach-implementation.webp" alt="" loading="lazy" decoding="async">
             </div>
             <h3>Собираем систему</h3>
             <p>
@@ -79,7 +79,7 @@
           <article class="approach__item approach__item--accent">
             <span class="approach__number">02</span>
             <div class="approach__visual" aria-hidden="true">
-              <img src="assets/approach-management.png" alt="" loading="lazy">
+              <img src="assets/approach-management.webp" alt="" loading="lazy" decoding="async">
             </div>
             <h3>Управляем процессом</h3>
             <p>
@@ -90,7 +90,7 @@
           <article class="approach__item">
             <span class="approach__number">03</span>
             <div class="approach__visual" aria-hidden="true">
-              <img src="assets/approach-result.png" alt="" loading="lazy">
+              <img src="assets/approach-result.webp" alt="" loading="lazy" decoding="async">
             </div>
             <h3>Отвечаем за результат</h3>
             <p>
@@ -156,7 +156,6 @@
 
         <div class="page-shell benefits__layout">
           <article class="benefits__visual">
-            <img src="assets/client-benefits-visual-v2.jpg" alt="Чертежи, материалы и график проекта интерьера" />
             <div class="benefits__visual-copy">
               <span>Полный цикл</span>
               <h3>Проект, комплектация и реализация собраны в одной логике</h3>
@@ -300,40 +299,52 @@
       <section class="cases" id="cases">
         <div class="page-shell section-head section-head--split">
           <div>
-            <p class="section-kicker">Кейсы / объекты</p>
-            <h2>Интерьеры, собранные<br />в единую систему</h2>
+            <p class="section-kicker">Наши работы</p>
+            <h2>Живые фото<br />с наших объектов</h2>
           </div>
           <p>
-            В портфолио важны не только красивые кадры, но и путь: задача клиента, бюджетная логика,
-            комплектация и качество реализации.
+            Здесь нет рендеров и стоковых картинок — только реальные фотографии выполненных работ.
+            Нажмите на фото, чтобы рассмотреть детали.
           </p>
         </div>
 
-        <div class="page-shell cases__grid">
-          <article class="case-card case-card--large">
-            <img src="assets/case-apartment.jpg" alt="Современная гостиная в спокойной светлой гамме" />
-            <div class="case-card__body">
-              <p>Квартира, 86 м²</p>
-              <h3>Сдержанный интерьер для семьи</h3>
-              <span>Дизайн-проект · комплектация · реализация</span>
-            </div>
-          </article>
-          <article class="case-card">
-            <img src="assets/case-house.jpg" alt="Светлая зона гостиной и кухни в современном доме" />
-            <div class="case-card__body">
-              <p>Дом, 145 м²</p>
-              <h3>Тёплая архитектурная база</h3>
-              <span>Проект · мебель · свет</span>
-            </div>
-          </article>
-          <article class="case-card">
-            <img src="assets/case-detail.jpg" alt="Минималистичная гостиная с мягкой мебелью" />
-            <div class="case-card__body">
-              <p>Апартаменты, 64 м²</p>
-              <h3>Компактное пространство<br />без визуального шума</h3>
-              <span>Планировка · материалы · надзор</span>
-            </div>
-          </article>
+        <div class="page-shell works__grid">
+          <a class="work" href="assets/works/work-kitchen-main.webp" data-lightbox>
+            <img src="assets/works/work-kitchen-main.webp" alt="Белая кухня с фартуком под мрамор и чёрной фурнитурой" width="1400" height="1050" loading="lazy" decoding="async" />
+            <span class="work__tag">Кухня</span>
+          </a>
+          <a class="work" href="assets/works/work-hallway.webp" data-lightbox>
+            <img src="assets/works/work-hallway.webp" alt="Прихожая со встроенными шкафами и контурной подсветкой" width="1000" height="1333" loading="lazy" decoding="async" />
+            <span class="work__tag">Прихожая</span>
+          </a>
+          <a class="work" href="assets/works/work-bath-mirror.webp" data-lightbox>
+            <img src="assets/works/work-bath-mirror.webp" alt="Ванная комната: зеркало с подсветкой и душевая зона" width="1000" height="1333" loading="lazy" decoding="async" />
+            <span class="work__tag">Ванная</span>
+          </a>
+          <a class="work" href="assets/works/work-kitchen-hob.webp" data-lightbox>
+            <img src="assets/works/work-kitchen-hob.webp" alt="Кухня: варочная панель и встроенная вытяжка" width="1000" height="1333" loading="lazy" decoding="async" />
+            <span class="work__tag">Кухня</span>
+          </a>
+          <a class="work" href="assets/works/work-bath-shower.webp" data-lightbox>
+            <img src="assets/works/work-bath-shower.webp" alt="Душевая зона с тропическим душем и скрытым трапом" width="1000" height="1333" loading="lazy" decoding="async" />
+            <span class="work__tag">Ванная</span>
+          </a>
+          <a class="work" href="assets/works/work-kitchen-light.webp" data-lightbox>
+            <img src="assets/works/work-kitchen-light.webp" alt="Кухня с контурной световой линией на потолке" width="1000" height="1333" loading="lazy" decoding="async" />
+            <span class="work__tag">Кухня</span>
+          </a>
+          <a class="work" href="assets/works/work-bath-niche.webp" data-lightbox>
+            <img src="assets/works/work-bath-niche.webp" alt="Ниша с полками из керамогранита" width="1000" height="1333" loading="lazy" decoding="async" />
+            <span class="work__tag">Ванная</span>
+          </a>
+          <a class="work" href="assets/works/work-kitchen-sink.webp" data-lightbox>
+            <img src="assets/works/work-kitchen-sink.webp" alt="Кухонная мойка с чёрным смесителем" width="1400" height="1050" loading="lazy" decoding="async" />
+            <span class="work__tag">Кухня</span>
+          </a>
+          <a class="work" href="assets/works/work-bath-wc.webp" data-lightbox>
+            <img src="assets/works/work-bath-wc.webp" alt="Санузел с подвесным унитазом и скрытой инсталляцией" width="1000" height="1106" loading="lazy" decoding="async" />
+            <span class="work__tag">Санузел</span>
+          </a>
         </div>
       </section>
 
@@ -383,7 +394,7 @@
       <div class="page-shell footer__grid">
         <div class="footer__brand">
           <a class="brand brand--footer" href="#top" aria-label="ОБЛИК">
-            <img class="brand__logo" src="assets/oblik-logo-word-gold.png" alt="ОБЛИК" width="1536" height="301" />
+            <img class="brand__logo" src="assets/oblik-logo-word-gold.webp" alt="ОБЛИК" width="1536" height="301" />
           </a>
           <p>
             Интерьерное бюро полного цикла: проект, комплектация, реализация и контроль результата.
@@ -392,13 +403,13 @@
 
         <div class="footer__column">
           <h2>Контакты</h2>
-          <a class="footer__link" href="tel:+79990000000">
+          <a class="footer__link" href="tel:+79953434754">
             <span class="footer__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24">
                 <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z" />
               </svg>
             </span>
-            +7 (999) 000-00-00
+            +7 (995) 343-47-54
           </a>
           <a class="footer__link" href="mailto:hello@oblik-buro.ru">
             <span class="footer__icon" aria-hidden="true">
@@ -421,9 +432,9 @@
             </span>
             Telegram
           </a>
-          <a class="footer__link" href="#" aria-label="MAX">
+          <a class="footer__link" href="https://web.max.ru/451119396" target="_blank" rel="noreferrer" aria-label="MAX">
             <span class="footer__messenger footer__messenger--max" aria-hidden="true">
-              <img src="assets/max-icon-gold.png" alt="" width="22" height="22">
+              <img src="assets/max-icon-gold.webp" alt="" width="22" height="22" loading="lazy" decoding="async">
             </span>
             MAX
           </a>
@@ -434,7 +445,7 @@
           <a href="#approach">О компании</a>
           <a href="#services">Услуги</a>
           <a href="#process">Этапы</a>
-          <a href="#cases">Кейсы</a>
+          <a href="#cases">Работы</a>
           <a href="#contact">Контакты</a>
         </nav>
       </div>
@@ -444,6 +455,11 @@
         <span>Интерьерное бюро полного цикла</span>
       </div>
     </footer>
+
+    <div class="lightbox" data-lightbox-root role="dialog" aria-modal="true" aria-label="Просмотр фотографии">
+      <button class="lightbox__close" type="button" aria-label="Закрыть" data-lightbox-close>&times;</button>
+      <img src="" alt="" data-lightbox-image />
+    </div>
 
     <script src="script.js"></script>
   </body>
