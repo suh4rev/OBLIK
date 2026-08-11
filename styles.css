@@ -930,6 +930,20 @@ section {
   color: #b08f52;
 }
 
+.benefits__grid .benefit-card.benefit-card--dark {
+  color: var(--white);
+  border-color: rgba(116, 136, 142, 0.24);
+  background:
+    linear-gradient(145deg, rgba(80, 97, 113, 0.24), transparent 42%),
+    linear-gradient(180deg, rgba(31, 51, 64, 0.22), transparent 70%),
+    var(--graphite);
+  box-shadow: 0 20px 66px rgba(18, 22, 24, 0.16);
+}
+
+.benefits__grid .benefit-card.benefit-card--dark .benefit-card__icon {
+  color: #9caeaf;
+}
+
 .benefit-card__icon {
   width: 30px;
   height: 30px;
