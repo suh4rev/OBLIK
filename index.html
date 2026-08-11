@@ -9,7 +9,7 @@
       content="ОБЛИК — интерьерное бюро полного цикла. Дизайн-проект, комплектация, реализация и контроль интерьера под ключ."
     />
     <link rel="preload" as="image" href="assets/hero-interior-right-accent.webp" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=cta-visual" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -34,8 +34,9 @@
         <a href="#services">Услуги</a>
         <a href="#process">Этапы</a>
         <a href="#cases">Работы</a>
+        <a href="#reviews">Отзывы</a>
         <a href="#contact">Контакты</a>
-        <a class="nav-cta" href="#contact">Связаться с нами</a>
+        <a class="nav-cta" href="https://web.max.ru/451119396" target="_blank" rel="noreferrer">Связаться с нами</a>
       </nav>
     </header>
 
@@ -52,7 +53,7 @@
             дизайн, закупки, ремонт и контроль результата.
           </p>
           <div class="hero__actions" aria-label="Основные действия">
-            <a class="button button--light" href="#contact">Обсудить проект</a>
+            <a class="button button--light" href="https://web.max.ru/451119396" target="_blank" rel="noreferrer">Обсудить проект</a>
             <a class="button button--ghost" href="#cases">Смотреть работы</a>
           </div>
         </div>
@@ -254,45 +255,75 @@
         <div class="page-shell section-head section-head--split">
           <div>
             <p class="section-kicker">Как проходит работа</p>
-            <h2>Понятная последовательность без лишнего шума</h2>
+            <h2>Маршрут от первой идеи до готового интерьера</h2>
           </div>
           <p>
-            Каждый этап фиксируется по задачам, решениям и ответственности. Это помогает держать
-            проект в рамке, а не возвращаться к одним и тем же вопросам.
+            Вы понимаете, где сейчас проект, что уже согласовано, кто отвечает за следующий шаг
+            и какие решения нужны дальше.
           </p>
         </div>
 
-        <div class="page-shell process__list">
-          <article class="process-step">
-            <span>01</span>
-            <h3>Бриф и аудит задач</h3>
-            <p>Формируем цели, ограничения, сценарии жизни и базовую рамку бюджета.</p>
-          </article>
-          <article class="process-step">
-            <span>02</span>
-            <h3>Концепция</h3>
-            <p>Собираем образ будущего интерьера, планировки и ключевые материалы.</p>
-          </article>
-          <article class="process-step">
-            <span>03</span>
-            <h3>Проектная документация</h3>
-            <p>Готовим чертежи, ведомости, спецификации и решения для строителей.</p>
-          </article>
-          <article class="process-step">
-            <span>04</span>
-            <h3>Комплектация</h3>
-            <p>Подбираем позиции, сверяем сроки, цены, поставщиков и замены.</p>
-          </article>
-          <article class="process-step">
-            <span>05</span>
-            <h3>Реализация</h3>
-            <p>Координируем работы, авторский надзор и технические решения на объекте.</p>
-          </article>
-          <article class="process-step">
-            <span>06</span>
-            <h3>Передача результата</h3>
-            <p>Финальная проверка, комплектация деталей и готовый интерьер для жизни.</p>
-          </article>
+        <div class="page-shell process__layout">
+          <div class="process__timeline" aria-label="Этапы работы">
+            <article class="process-step">
+              <span class="process-step__number">01</span>
+              <div>
+                <h3>Бриф и рамка бюджета</h3>
+                <p>Разбираем задачу, ограничения объекта и фиксируем понятный стартовый ориентир.</p>
+              </div>
+            </article>
+            <article class="process-step">
+              <span class="process-step__number">02</span>
+              <div>
+                <h3>Концепция интерьера</h3>
+                <p>Собираем направление: планировка, настроение, материалы и ключевые решения.</p>
+              </div>
+            </article>
+            <article class="process-step">
+              <span class="process-step__number">03</span>
+              <div>
+                <h3>Чертежи и ведомости</h3>
+                <p>Готовим документы, по которым строители и поставщики понимают задачу одинаково.</p>
+              </div>
+            </article>
+            <article class="process-step">
+              <span class="process-step__number">04</span>
+              <div>
+                <h3>Материалы и поставки</h3>
+                <p>Подбираем позиции, сверяем цены, сроки, аналоги и заранее согласовываем замены.</p>
+              </div>
+            </article>
+            <article class="process-step">
+              <span class="process-step__number">05</span>
+              <div>
+                <h3>Контроль реализации</h3>
+                <p>Сверяем работы с проектом, решаем вопросы на объекте и держим вас в курсе.</p>
+              </div>
+            </article>
+            <article class="process-step">
+              <span class="process-step__number">06</span>
+              <div>
+                <h3>Проверка и передача</h3>
+                <p>Проходим финальные детали, комплектацию и передаём интерьер, готовый к жизни.</p>
+              </div>
+            </article>
+          </div>
+
+          <aside class="process__result" aria-label="Что получает клиент">
+            <span class="process__result-kicker">На выходе</span>
+            <h3>Не держите ремонт в голове — всё собрано в систему</h3>
+            <ul>
+              <li>сметная рамка и график этапов</li>
+              <li>ведомость материалов и поставок</li>
+              <li>отчёты по объекту и согласования</li>
+              <li>финальный чек-лист перед передачей</li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="page-shell process__cta">
+          <p>Не знаете, с какого этапа начать? Пришлите фото или план — подскажем первый шаг.</p>
+          <a class="button button--light" href="https://web.max.ru/451119396" target="_blank" rel="noreferrer">Получить разбор</a>
         </div>
       </section>
 
@@ -346,6 +377,94 @@
             <span class="work__tag">Санузел</span>
           </a>
         </div>
+        <a class="page-shell works-cta" href="https://web.max.ru/451119396" target="_blank" rel="noreferrer">
+          <span class="works-cta__visual" aria-hidden="true">
+            <span class="works-cta__visual-card"></span>
+            <span class="works-cta__visual-chat"></span>
+          </span>
+          <span class="works-cta__content">
+            <strong>Покажите объект — скажем, что делать первым</strong>
+            <span>Пришлите фото или план. Подскажем стартовый шаг, подходящий формат работ и где не стоит переплачивать.</span>
+          </span>
+          <span class="works-cta__button">Получить разбор</span>
+        </a>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="page-shell section-head section-head--split reviews__head">
+          <div>
+            <p class="section-kicker">Отзывы клиентов</p>
+            <h2>Результат, который видно в деталях</h2>
+          </div>
+        </div>
+
+        <div class="page-shell reviews__grid">
+          <article class="review-card">
+            <div class="review-card__top">
+              <div class="review-card__person">
+                <span class="review-card__avatar" aria-hidden="true">МП</span>
+                <div>
+                  <h3>М П</h3>
+                </div>
+              </div>
+              <div class="review-card__rating" aria-label="Оценка 5 из 5">
+                <span aria-hidden="true">★★★★★</span>
+                <time datetime="2024-08-20">20 августа 2024</time>
+              </div>
+            </div>
+            <blockquote>
+              Очень довольна результатом ремонта квартиры, выполненного этой компанией. Мастера работали оперативно, качественно и в срок. Отделка выглядит прекрасно, все мои пожелания были учтены. Рекомендую данную компанию всем, кто хочет получить отличный результат без лишних хлопот.
+            </blockquote>
+            <div class="review-card__gallery">
+              <a href="assets/reviews/review-mp-1.webp" data-lightbox>
+                <img src="assets/reviews/review-mp-1.webp" alt="Гостиная после ремонта: световые линии на потолке и встроенная мебель" width="1280" height="960" loading="lazy" decoding="async" />
+              </a>
+              <a href="assets/reviews/review-mp-2.webp" data-lightbox>
+                <img src="assets/reviews/review-mp-2.webp" alt="Готовая кухня-гостиная с островом и встроенными шкафами" width="1280" height="960" loading="lazy" decoding="async" />
+              </a>
+            </div>
+          </article>
+
+          <article class="review-card review-card--dark">
+            <div class="review-card__top">
+              <div class="review-card__person">
+                <span class="review-card__avatar" aria-hidden="true">ДС</span>
+                <div>
+                  <h3>Даша Соловьева</h3>
+                </div>
+              </div>
+              <div class="review-card__rating" aria-label="Оценка 5 из 5">
+                <span aria-hidden="true">★★★★★</span>
+                <time datetime="2026-08-01">1 августа 2026</time>
+              </div>
+            </div>
+            <blockquote>
+              Благодарим за ремонт! Мастера полностью взяли управление процессом на себя: мы только согласовывали детали и корректировали по ходу. Отдельное спасибо за помощь с материалами и логистикой: не пришлось никуда ездить, мастера сами организовывали доставку и принимали материалы. Итог сдан в оговорённый срок — для нас это было особенно важно. Рекомендуем!
+            </blockquote>
+            <div class="review-card__carousel" data-review-carousel>
+              <div class="review-card__carousel-head">
+                <div class="review-card__carousel-controls" aria-label="Листать фотографии отзыва">
+                  <button type="button" aria-label="Предыдущие фотографии" data-review-carousel-prev></button>
+                  <button type="button" aria-label="Следующие фотографии" data-review-carousel-next></button>
+                </div>
+              </div>
+              <div class="review-card__gallery review-card__gallery--slider" data-review-carousel-track>
+                <a href="assets/reviews/review-dasha-1.webp" data-lightbox>
+                  <img src="assets/reviews/review-dasha-1.webp" alt="Уютная зона отдыха после ремонта с мягким диваном и подсветкой" width="960" height="1280" loading="lazy" decoding="async" />
+                </a>
+                <a href="assets/reviews/review-dasha-2.webp" data-lightbox>
+                  <img src="assets/reviews/review-dasha-2.webp" alt="Прихожая после ремонта со встроенным хранением и туалетным столиком" width="960" height="1280" loading="lazy" decoding="async" />
+                </a>
+                <a href="assets/reviews/review-dasha-3.webp" data-lightbox>
+                  <img src="assets/reviews/review-dasha-3.webp" alt="Коридор после отделки с линейным светильником и белой дверью" width="960" height="1280" loading="lazy" decoding="async" />
+                </a>
+                <a href="assets/reviews/review-dasha-4.webp" data-lightbox>
+                  <img src="assets/reviews/review-dasha-4.webp" alt="Спальня после ремонта в спокойной серой гамме" width="960" height="1280" loading="lazy" decoding="async" />
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="comfort">
@@ -383,7 +502,7 @@
             Напишите, что нужно сделать: квартира, дом или коммерческое пространство.
             Мы быстро оценим задачу и подскажем понятный следующий шаг.
           </p>
-          <a class="button button--light contact__button" href="https://t.me/oleg_krut" target="_blank" rel="noreferrer">
+          <a class="button button--light contact__button" href="https://web.max.ru/451119396" target="_blank" rel="noreferrer">
             Написать нам
           </a>
         </div>
@@ -446,6 +565,7 @@
           <a href="#services">Услуги</a>
           <a href="#process">Этапы</a>
           <a href="#cases">Работы</a>
+          <a href="#reviews">Отзывы</a>
           <a href="#contact">Контакты</a>
         </nav>
       </div>
@@ -457,10 +577,12 @@
     </footer>
 
     <div class="lightbox" data-lightbox-root role="dialog" aria-modal="true" aria-label="Просмотр фотографии">
-      <button class="lightbox__close" type="button" aria-label="Закрыть" data-lightbox-close>&times;</button>
-      <img src="" alt="" data-lightbox-image />
+      <div class="lightbox__frame">
+        <button class="lightbox__close" type="button" aria-label="Закрыть" data-lightbox-close>&times;</button>
+        <img src="" alt="" data-lightbox-image />
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=reviews-arrows"></script>
   </body>
 </html>

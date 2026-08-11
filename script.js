@@ -49,6 +49,42 @@ document.querySelectorAll("[data-lightbox]").forEach((link) => {
   });
 });
 
+document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
+  const track = carousel.querySelector("[data-review-carousel-track]");
+  const prev = carousel.querySelector("[data-review-carousel-prev]");
+  const next = carousel.querySelector("[data-review-carousel-next]");
+
+  if (!track || !prev || !next) return;
+
+  let index = 0;
+
+  const updateControls = () => {
+    const items = Array.from(track.querySelectorAll("a"));
+    const visibleCount = track.clientWidth < 360 ? 1 : 2;
+    const maxIndex = Math.max(0, items.length - visibleCount);
+    const firstItem = items[0];
+    const trackStyles = getComputedStyle(track);
+    const columnGap = parseFloat(trackStyles.columnGap);
+    const gap = Number.isFinite(columnGap) ? columnGap : parseFloat(trackStyles.gap) || 0;
+    const step = firstItem ? firstItem.getBoundingClientRect().width + gap : 0;
+
+    index = Math.min(index, maxIndex);
+    track.scrollTo({ left: index * step, behavior: "smooth" });
+    prev.hidden = index === 0;
+    next.hidden = index >= maxIndex;
+  };
+
+  const scrollCarousel = (direction) => {
+    index += direction;
+    updateControls();
+  };
+
+  prev.addEventListener("click", () => scrollCarousel(-1));
+  next.addEventListener("click", () => scrollCarousel(1));
+  window.addEventListener("resize", updateControls);
+  updateControls();
+});
+
 lightbox?.addEventListener("click", (event) => {
   if (event.target === lightbox || event.target.closest("[data-lightbox-close]")) {
     closeLightbox();
