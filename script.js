@@ -49,6 +49,105 @@ document.querySelectorAll("[data-lightbox]").forEach((link) => {
   });
 });
 
+document.querySelectorAll("[data-process]").forEach((timeline) => {
+  const steps = Array.from(timeline.querySelectorAll("[data-process-step]"));
+  const panels = Array.from(timeline.querySelectorAll("[data-process-panel]"));
+
+  if (steps.length !== panels.length || !steps.length) return;
+
+  const canHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+  let hoverTimer;
+
+  const setActiveStep = (activeIndex) => {
+    window.clearTimeout(hoverTimer);
+
+    steps.forEach((step, index) => {
+      const isActive = index === activeIndex;
+      step.classList.toggle("is-active", isActive);
+      step.setAttribute("aria-expanded", String(isActive));
+      panels[index].classList.toggle("is-active", isActive);
+    });
+  };
+
+  steps.forEach((step, index) => {
+    step.addEventListener("click", () => setActiveStep(index));
+    step.addEventListener("focus", () => setActiveStep(index));
+
+    // небольшая задержка: провести мышью через список, не перещёлкивая все карточки
+    step.addEventListener("mouseenter", () => {
+      if (!canHover.matches) return;
+      window.clearTimeout(hoverTimer);
+      hoverTimer = window.setTimeout(() => setActiveStep(index), 130);
+    });
+
+    step.addEventListener("mouseleave", () => window.clearTimeout(hoverTimer));
+  });
+
+  setActiveStep(0);
+});
+
+document.querySelectorAll("[data-works-gallery]").forEach((gallery) => {
+  const thumbs = Array.from(gallery.querySelectorAll("[data-works-thumb]"));
+  const activeLink = gallery.querySelector("[data-works-active]");
+  const activeImage = gallery.querySelector("[data-works-active-image]");
+  const previous = gallery.querySelector("[data-works-prev]");
+  const next = gallery.querySelector("[data-works-next]");
+  const currentCounter = gallery.querySelector("[data-works-counter-current]");
+  const totalCounter = gallery.querySelector("[data-works-counter-total]");
+
+  if (!thumbs.length || !activeLink || !activeImage || !previous || !next || !currentCounter || !totalCounter) return;
+
+  let activeIndex = 0;
+
+  const setActivePhoto = (nextIndex, { keepThumbVisible = true } = {}) => {
+    activeIndex = Math.max(0, Math.min(nextIndex, thumbs.length - 1));
+    const thumb = thumbs[activeIndex];
+    const source = thumb.dataset.src;
+    const alt = thumb.dataset.alt;
+
+    if (!source || !alt) return;
+
+    activeLink.href = source;
+    activeImage.src = source;
+    activeImage.alt = alt;
+    currentCounter.textContent = String(activeIndex + 1).padStart(2, "0");
+    totalCounter.textContent = `/ ${String(thumbs.length).padStart(2, "0")}`;
+    previous.hidden = activeIndex === 0;
+    next.hidden = activeIndex === thumbs.length - 1;
+
+    thumbs.forEach((item, index) => {
+      const isActive = index === activeIndex;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-selected", String(isActive));
+    });
+
+    if (keepThumbVisible) {
+      thumb.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    }
+  };
+
+  thumbs.forEach((thumb, index) => {
+    thumb.addEventListener("click", () => setActivePhoto(index));
+  });
+
+  previous.addEventListener("click", () => setActivePhoto(activeIndex - 1));
+  next.addEventListener("click", () => setActivePhoto(activeIndex + 1));
+
+  gallery.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft" && activeIndex > 0) {
+      event.preventDefault();
+      setActivePhoto(activeIndex - 1);
+    }
+
+    if (event.key === "ArrowRight" && activeIndex < thumbs.length - 1) {
+      event.preventDefault();
+      setActivePhoto(activeIndex + 1);
+    }
+  });
+
+  setActivePhoto(0, { keepThumbVisible: false });
+});
+
 document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
   const track = carousel.querySelector("[data-review-carousel-track]");
   const prev = carousel.querySelector("[data-review-carousel-prev]");

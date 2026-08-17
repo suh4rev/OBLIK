@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /screenshots/
+Disallow: /tmp/
+Disallow: /.claude/
+
+Sitemap: https://oblik-buro.ru/sitemap.xml
